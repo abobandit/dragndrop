@@ -1,5 +1,5 @@
 .container-fluid{
-    background: url("wallAnime.png") no-repeat 14.7% 96.7%;
+    background: url("./../img/wallAnime.png") no-repeat 14.7% 96.7%;
     background-size: 150px;
 }
 

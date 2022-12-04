@@ -6,7 +6,7 @@ const btn = document.querySelector(".adder")
 const name = document.querySelector('#name')
 const order = document.querySelector('#order')
 
-btn.addEventListener('click', (evt) => {
+btn.addEventListener('click', () => {
     if (name.value.length >= 2 && order.value.length >= 5) {
         let curTime = new Date()
         curTime = curTime.getDay() + '.' + curTime.getMonth() + '.' + curTime.getFullYear() + ' ' + curTime.getHours() + ':' + curTime.getMinutes()+':' +  curTime.getSeconds()
@@ -30,7 +30,7 @@ orderContainer.onmousedown = function (e) {
     eT.style.width = orderWidth
     eT.style.borderRadius = '10px'
     moveAt(e)
-    eT.style.zIndex = 1000; // над другими элементами
+    eT.style.zIndex =' 1000'; // над другими элементами
     function moveAt(e) {
         eT.style.left = e.pageX - shiftX / 2 + 'px';
         eT.style.top = e.pageY - shiftY / 2 + 'px';
@@ -39,7 +39,7 @@ orderContainer.onmousedown = function (e) {
         eT.style.outline = '1px solid red'
         moveAt(e);
     }
-    eT.onmouseup = function (evt) {
+    eT.onmouseup = function () {
         function upDate(){
             let curTime = new Date()
             curTime = curTime.getDay() + '.' + curTime.getMonth() + '.' + curTime.getFullYear() + ' ' + curTime.getHours() + ':' + curTime.getMinutes() + ':' + curTime.getSeconds()
