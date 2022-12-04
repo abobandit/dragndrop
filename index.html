@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container-fluid mt-2">
+    <h1 class="text-md-center"> Оставьте заявку</h1>
+    <div class="container d-grid align-items-center order-adder">
+        <div class="vstack col-5 mt-3 mx-auto">
+            <input type="text" class="form-control mb-3" id="name" placeholder="Ваше имя">
+            <input type="text" class="form-control mb-3" id="order" placeholder="Мне не нравится запах носков Александра">
+        </div>
+        <input type="button" class="adder btn btn-danger mb-5 col-md-2 col-3 ms-auto me-5" value="Добавить">
+    </div>
+    <div id="order-container" class="container mx-auto text-nowrap row justify-content-evenly">
+        <div class="col-3">
+            <h2 class="text-center">Новые заказы</h2>
+            <ul data-drag class="order border overflow-auto border-dark text-wrap text-break">
+            </ul>
+        </div>
+        <div  class="col-3">
+            <h2 class="text-center">В процессе</h2>
+            <ul id="in-process" data-drag class="order border border-dark text-wrap text-break">
+
+            </ul>
+        </div>
+        <div  class="col-3">
+            <h2 class="text-center">Завершенные</h2>
+            <ul id="finished" data-drag class="order border border-dark text-wrap text-break">
+
+            </ul>
+        </div>
+
+    </div>
+</div>
+<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

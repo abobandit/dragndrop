@@ -1,0 +1,24 @@
+.container-fluid{
+    background: url("wallAnime.png") no-repeat 14.7% 96.7%;
+    background-size: 150px;
+}
+
+.order-item{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px ;
+}
+.orderer{
+    align-self: end;
+    padding: 2px;
+    margin-left:auto;
+    font-size:12px;
+    border-radius: 5px;
+    border: rgba(255, 0, 0, 0.5) 1px solid;
+}
+ul{
+    padding:5px 7px;
+    height: 55vh;
+    border-radius: 10px;
+    background: white;
+}
